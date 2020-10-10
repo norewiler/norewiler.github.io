@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>My HTML</title>   
+         <style>
+             h1 {
+                 background-color: red;
+                 border: double;
+                 text-align: center;
+             }
+             li {color: red;} /* CSS comment - set's all list elements to be red */
+             .altered {color:green;} /* set all elements with "altered" class to be green*/
+             .altered {text-decoration: underline;} /* font-style (itallics), font-weight (bold) text-transform (UPPERCASE) */
+             #normal {color:brown;} /* set THE element with id "normal to be brown" */
+             .changeMe {
+                background-color: yellow;
+                margin: 3em;
+                font-size: 2em; 
+                width: 400px;
+             }
+             button {
+                 cursor:pointer;
+             }
+         </style>
+    </head>
+    <body>
+        <h1>Lets see how to code in <stong><em>HTML</em></stong></h1>
+        <p id="normal"> <!--ID's can only be applied to a single element-->
+            This text should be normal.
+            <!-- This is an HTML comment-->
+        </p>
+        
+        <p class="altered"> <!--Classes can be applied to multiple elements-->
+            <strong>This text should be bold.</strong>
+        </p>
+        <p class="altered">
+            <em>This text should be in itallics.</em>
+        </p>
+        <button>Press Here</button>
+        <ul>
+            <li>List Item1</li>
+            <li>List Item2</li>
+            <li>List Item3</li>
+        </ul>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Reference Sheet</a>
+        <figure>
+            <img src="https://media.graytvinc.com/images/810*455/dodgers+logo.jpg"
+             alt="Dodgers Logo">
+             <figcaption>Dogers Logo</figcaption>
+        </figure>
+        <div class="changeMe">
+            This text should be bigger, have a padding/margin around it, and not run across the whole
+             screen. You do this by adjusting the classes font size, margin, and width. You should see also the
+             affects of setting the classes height.
+        </div>
+    </body>
+</html>
